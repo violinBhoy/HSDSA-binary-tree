@@ -14,4 +14,22 @@ public class TreeNode implements Treeable {
         leftTreeNode = null;
         rightTreeNode = null;
     }
+
+    public TreeNode(Comparable value, TreeNode left, TreeNode right) {
+        treeNodeValue = value;
+        leftTreeNode = left;
+        rightTreeNode = right;
+    }
+
+    public Comparable getValue() { return treeNodeValue; }
+
+    public TreeNode getLeft() { return leftTreeNode; }
+
+    public TreeNode getRight() { return rightTreeNode; }
+
+    public void setValue(Comparable value) { treeNodeValue = value; }
+
+    public void setLeft(Treeable left) { leftTreeNode = (TreeNode)left; }
+
+    public void setRight(Treeable right) { rightTreeNode = (TreeNode)right; }
 }
